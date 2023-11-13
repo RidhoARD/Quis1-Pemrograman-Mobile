@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="60dp"
+    android:paddingRight="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Perhitungan Nilai!" />
+
+    <EditText
+        android:id="@+id/nilai_tugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Tugas"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nilai_quis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Quis"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/nilai_uts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai UTS"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nilai_uas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai UAS"
+        android:inputType="number" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proses Hitung"
+            android:id="@+id/proses_hitung"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/proses_hitung"
+            android:text="Bersih"
+            android:id="@+id/bersih"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/hasil"
+        android:text="HASIL"
+        android:textSize="30sp" />
+
+</LinearLayout>
